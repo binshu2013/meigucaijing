@@ -1,0 +1,94 @@
+<!-- ======= Contact Section ======= -->
+<section id='contact' class='contact' style='padding-top: 120px'>
+  <div class='container' data-aos='fade-up'>
+
+    <div class='section-title'>
+      <p style="text-align: center;">联系我们</p>
+    </div>
+
+    <div class='row'>
+
+      <div class='col-lg-6'>
+
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='info-box'>
+              <i class='bx bx-map'></i>
+              <h3>地址</h3>
+              <p>3319 S 186th St, NE 68130, USA</p>
+            </div>
+          </div>
+          <div class='col-md-6'>
+            <div class='info-box mt-4'>
+              <i class='bx bx-envelope'></i>
+              <h3>邮件联系</h3>
+              <p>info@MeiGuCaiJing.com</p>
+            </div>
+          </div>
+          <div class='col-md-6'>
+            <div class='info-box mt-4'>
+              <i class='bx bx-phone-call'></i>
+              <h3>电话联系</h3>
+              <p>+1 402 819 8989</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='col-lg-6 mt-4 mt-lg-0'>
+        <form
+          action="/sendMail"
+          method='post'
+          role='form'
+          class='email-form'
+        >
+        <div class='row'>
+          <div class='col-md-6 form-group'>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text">
+                <span class="bi-person"></span>                 
+              </span>
+              <input type="text" class="form-control" placeholder="您的称呼" name='username' aria-label="Username" />
+            </div>            
+          </div>
+          <div class='col-md-6 form-group mt-3 mt-md-0'>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text">
+                <span class="bi-envelope"></span>                 
+              </span>
+              <input type='email' class='form-control' name='email' id='email' placeholder='您的邮箱' required />              
+            </div>            
+          </div>
+          <div class='form-group mt-3'>
+            <input
+              type='text'
+              class='form-control'
+              name='subject'
+              id='subject'
+              placeholder='信息抬头'
+              required
+            />
+          </div>
+          <div class='form-group mt-3'>
+            <textarea
+              class='form-control'
+              name='message'
+              rows='5'
+              placeholder='信息内容'
+              required
+            ></textarea>
+          </div>
+          <div class='my-3'>
+            <div class='loading'>Loading</div>
+            <div class='error-message'></div>
+            <div class='sent-message'>您的信息已被发出，我们会及时向你反馈。</div>
+          </div>
+          <div class='text-center'><button type='submit' id="sendEmail">发送信息</button></div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
