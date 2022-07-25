@@ -11,6 +11,6 @@ async function bootstrap() {
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
   app.set('view options', { layout: '/layouts/layout' });
-  await app.listen(8080);
+  await app.listen(process.env.PORT || 80);
 }
 bootstrap();

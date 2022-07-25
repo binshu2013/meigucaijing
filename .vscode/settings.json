@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/8cc9f279-8431-4916-ba05-d312d98b91ef/microsoft.web/sites/subscriptions/8cc9f279-8431-4916-ba05-d312d98b91ef/resourceGroups/meigucaijing_group/providers/Microsoft.Web/sites/meigucaijing",
+    "appService.deploySubpath": "."
+}
